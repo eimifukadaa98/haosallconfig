@@ -1,0 +1,12 @@
+mqtt:
+  host: core-mosquitto
+  user: 
+  password: 
+  
+frigate:
+  url: http://ip:5002
+
+
+detectors:
+  deepstack:
+    url: http://ip:3002
