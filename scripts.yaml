@@ -1,0 +1,25 @@
+new_script:
+  alias: google cast toggle
+  sequence:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: media_player.mockup
+        state: disarmed
+      sequence:
+      - service: cast.show_lovelace_view
+        data:
+          code: '7777'
+          entity_id: media_player.mockup
+    - conditions:
+      - condition: state
+        entity_id: media_player.mockup
+        state: armed_home
+      sequence:
+      - service: cast.show_lovelace_view
+        data:
+          code: '7777'
+          entity_id: media_player.mockup
+    default: []
+  mode: single
+  icon: mdi:shield-home
