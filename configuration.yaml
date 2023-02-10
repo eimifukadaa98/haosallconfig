@@ -1,0 +1,15 @@
+# Custom Panels
+
+panel_custom: 
+  - name: Supervisor
+    url_path: hassio/system # url_path needs to be unique for each panel_custom config
+    sidebar_title: Supervisor
+    sidebar_icon: mdi:home-assistant # https://materialdesignicons.com/
+    module_url: /local/panel-redirect.js # 'local' is '/config/www/'
+
+
+
+# To load all:
+demo:
+light:
+  - platform: demo
